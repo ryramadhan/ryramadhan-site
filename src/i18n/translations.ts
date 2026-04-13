@@ -20,7 +20,6 @@ export type Translations = {
   nav: {
     home: string
     about: string
-    skills: string
     projects: string
     contact: string
     cta: string
@@ -161,7 +160,6 @@ export const translations: Record<Locale, Translations> = {
     nav: {
       home: 'Home',
       about: 'About',
-      skills: 'Skills',
       projects: 'Projects',
       contact: 'Contact',
       cta: 'Let’s talk',
@@ -262,7 +260,6 @@ export const translations: Record<Locale, Translations> = {
     nav: {
       home: 'Beranda',
       about: 'Tentang',
-      skills: 'Keahlian',
       projects: 'Proyek',
       contact: 'Kontak',
       cta: 'Diskusi',
