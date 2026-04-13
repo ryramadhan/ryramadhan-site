@@ -5,8 +5,7 @@ Designed with monochrome UI, generous spacing, subtle borders, and calm motion.
 
 ⬛️⬜️ **Sections**
 - Home (Hero)
-- About
-- Skills
+- About (includes Skills)
 - Projects
 - Contact
 
@@ -27,6 +26,8 @@ Designed with monochrome UI, generous spacing, subtle borders, and calm motion.
 - **Sticky navbar** with light blur on scroll
 - **Smooth scroll** navigation
 - **Subtle hover** interactions (underline, border brighten, gentle scale)
+- **Project images** with grayscale-to-color hover effect
+- **Clickable project cards** linking to GitHub
 - **EN/ID language toggle** (persisted in `localStorage`)
 
 ---
@@ -84,9 +85,8 @@ src/
     translations.ts    # EN/ID copy + portfolio data
   sections/
     Hero.tsx
-    About.tsx
-    Skills.tsx
-    Projects.tsx
+    About.tsx      # Includes Skills section
+    Projects.tsx   # With image thumbnails & GitHub links
     Contact.tsx
   lib/
     cn.ts          # clsx + tailwind-merge helper
