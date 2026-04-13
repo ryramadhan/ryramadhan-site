@@ -1,4 +1,5 @@
 import { Section } from '../components/layout/Section'
+import { Badge } from '../components/ui/Badge'
 import { FadeIn } from '../components/motion/FadeIn'
 import { useI18n } from '../i18n/I18nProvider'
 
@@ -26,6 +27,21 @@ export function About() {
                 <p className="mt-2 text-sm text-[var(--muted)] leading-7">{c.body}</p>
               </div>
             ))}
+          </div>
+
+          <div className="pt-8">
+            <p className="text-xs font-medium uppercase tracking-[0.18em] text-[var(--muted-2)]">
+              {t.skills.eyebrow}
+            </p>
+            <p className="mt-2 text-lg font-semibold tracking-[-0.02em] text-[var(--text)]">
+              {t.skills.title}
+            </p>
+            <p className="mt-1 text-sm text-[var(--muted)]">{t.skills.description}</p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {portfolio.skills.map((skill) => (
+                <Badge key={skill}>{skill}</Badge>
+              ))}
+            </div>
           </div>
         </div>
       </FadeIn>

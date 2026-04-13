@@ -49,7 +49,6 @@ export function Navbar() {
             {[
               { label: t.nav.home, href: '#home' },
               { label: t.nav.about, href: '#about' },
-              { label: t.nav.skills, href: '#skills' },
               { label: t.nav.projects, href: '#projects' },
               { label: t.nav.contact, href: '#contact' },
             ].map((it) => (
