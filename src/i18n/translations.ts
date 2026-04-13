@@ -71,71 +71,78 @@ const baseProjects: Project[] = [
   {
     title: 'QuickPOS',
     description:
-      'Developed a web-based Point of Sale (POS) system to support business operations, including product management, sales transactions, purchases, and customer and supplier management. Features include dashboard analytics, sales reports, inventory tracking, and role-based authentication. Built using Node.js, Express, PostgreSQL, and EJS.',
+      'Developed a web-based Point of Sale (POS) system to support business operations, including product management, sales transactions, purchases, and customer and supplier management. Features include dashboard analytics, sales reports, inventory tracking, and role-based authentication.',
     stack: ['Node.js', 'Express', 'PostgreSQL', 'EJS', 'Dashboard', 'RBAC'],
     period: 'Apr 2025 – Jul 2025',
     organization: 'RUBICAMP Bootcamp',
     links: [{ label: 'GitHub', href: 'https://github.com/ikiyyz/quickpos' }],
+    image: '/images/projects/quickpos.jpg',
   },
   {
     title: 'SQLite BREAD Pagination',
     description:
-      'Developed a data management web application with CRUD (Create, Read, Update, Delete) features, including pagination and multi-criteria filtering with AND/OR logic. Built using Node.js, Express, SQLite3, and EJS.',
+      'Developed a data management web application with CRUD (Create, Read, Update, Delete) features, including pagination and multi-criteria filtering with AND/OR logic.',
     stack: ['Node.js', 'Express', 'SQLite3', 'EJS', 'Pagination', 'Filtering'],
     period: 'Apr 2025 – Jul 2025',
     organization: 'RUBICAMP Bootcamp',
     links: [
       { label: 'GitHub', href: 'https://github.com/ikiyyz/sqlite-bread-pagination' },
     ],
+    image: '/images/projects/sqlite-bread.jpg',
   },
   {
     title: 'PostgreSQL Auth Pagination',
     description:
-      'Developed a web-based Todo application with user authentication, data management, and profile management features. Includes pagination, advanced filtering and sorting (with AND/OR conditions), and avatar upload for user profiles. Built using Express, PostgreSQL, and session-based authentication with a well-structured architecture.',
+      'Developed a web-based Todo application with user authentication, data management, and profile management features. Includes pagination, advanced filtering and sorting (with AND/OR conditions), and avatar upload for user profiles.',
     stack: ['Express', 'PostgreSQL', 'Session Auth', 'Pagination', 'Sorting', 'Upload'],
     period: 'Apr 2025 – Jul 2025',
     organization: 'RUBICAMP Bootcamp',
     links: [
       { label: 'GitHub', href: 'https://github.com/ikiyyz/postgres-auth-pagination' },
     ],
+    image: '/images/projects/postgres-auth.jpg',
   },
   {
     title: 'MongoDB BREAD API',
     description:
-      'Developed a MongoDB-based web application for managing user and todo data, featuring CRUD operations, search, sorting, and pagination. Built with Node.js and Express on the backend, and JavaScript for an interactive user interface.',
+      'Developed a MongoDB-based web application for managing user and todo data, featuring CRUD operations, search, sorting, and pagination.',
     stack: ['Node.js', 'Express', 'MongoDB', 'JavaScript', 'Search', 'Pagination'],
     period: 'Apr 2025 – Jul 2025',
     organization: 'RUBICAMP Bootcamp',
     links: [
       { label: 'GitHub', href: 'https://github.com/ikiyyz/mongodb-async-breads-api' },
     ],
+    image: '/images/projects/mongodb-api.jpg',
   },
   {
     title: 'Connect Link',
     description:
-      'Developed a web-based contact management application with CRUD (Create, Read, Update, Delete) features and search functionality by name, phone number, and email. Built using HTML, CSS, and JavaScript.',
+      'Developed a web-based contact management application with CRUD (Create, Read, Update, Delete) features and search functionality by name, phone number, and email.',
     stack: ['HTML', 'CSS', 'JavaScript', 'CRUD', 'Search'],
     period: 'Feb 2024 – Jun 2024',
     organization: 'Bear Mentor Bootcamp',
     links: [{ label: 'GitHub', href: 'https://github.com/ramadhanrizki/connect-link.com' }],
+    image: '/images/projects/connect-link.jpg',
   },
   {
     title: 'Learnify Study',
     description:
-      'Developed a task management app (Learnify Study) to boost productivity, similar to Trello and Todoist, with task management, agenda, and habit tracking features. Used Vite, Node.js, TypeScript, React, React Router, and Vercel.',
+      'Developed a task management app (Learnify Study) to boost productivity, similar to Trello and Todoist, with task management, agenda, and habit tracking features.',
     stack: ['Vite', 'Node.js', 'TypeScript', 'React', 'React Router', 'Vercel'],
     period: 'Feb 2024 – Jun 2024',
     organization: 'Bear Mentor Bootcamp',
     links: [{ label: 'GitHub', href: 'https://github.com/ramadhanrizki/learnify-study' }],
+    image: '/images/projects/learnify-study.jpg',
   },
   {
     title: 'SportStat API',
     description:
-      'Developed a REST API for sports data management with full CRUD (Create, Read, Update, Delete) endpoints and a well-structured API design. Built using TypeScript with Node.js, PostgreSQL as the database, and deployed on Render.',
+      'Developed a REST API for sports data management with full CRUD endpoints and a well-structured API design.',
     stack: ['TypeScript', 'Node.js', 'PostgreSQL', 'REST API', 'Render'],
     period: 'Feb 2024 – Jun 2024',
     organization: 'Bear Mentor Bootcamp',
     links: [{ label: 'GitHub', href: 'https://github.com/ramadhanrizki/sportstat-api' }],
+    image: '/images/projects/sportstat-api.jpg',
   },
   {
     title: 'Backend Internship',
@@ -145,6 +152,7 @@ const baseProjects: Project[] = [
     period: 'May 2022 – Aug 2022',
     organization: 'PT Topindoku Jatinangor',
     highlights: ['JWT auth implementation', 'Access control & application security'],
+    image: '/images/projects/backend-internship.jpg',
   },
 ]
 
@@ -353,37 +361,37 @@ export const translations: Record<Locale, Translations> = {
           QuickPOS: {
             ...p,
             description:
-              'Mengembangkan sistem Point of Sale (POS) berbasis web untuk mendukung operasional bisnis, mencakup manajemen produk, transaksi penjualan, pembelian, serta pengelolaan pelanggan dan supplier. Dilengkapi dengan fitur dashboard analytics, laporan penjualan, inventory tracking, serta sistem autentikasi dengan role-based access. Dibangun menggunakan Node.js, Express, PostgreSQL, dan EJS.',
+              'Mengembangkan sistem Point of Sale (POS) berbasis web untuk mendukung operasional bisnis, mencakup manajemen produk, transaksi penjualan, pembelian, serta pengelolaan pelanggan dan supplier. Dilengkapi dengan fitur dashboard analytics, laporan penjualan, inventory tracking, serta sistem autentikasi dengan role-based access.',
           },
           'SQLite BREAD Pagination': {
             ...p,
             description:
-              'Mengembangkan aplikasi web untuk pengelolaan data dengan fitur CRUD (Create, Read, Update, Delete), dilengkapi dengan pagination serta filtering multi-kriteria yang dapat dikombinasikan menggunakan operator AND/OR. Dibangun menggunakan Node.js, Express, SQLite3, dan EJS.',
+              'Mengembangkan aplikasi web untuk pengelolaan data dengan fitur CRUD (Create, Read, Update, Delete), dilengkapi dengan pagination serta filtering multi-kriteria yang dapat dikombinasikan menggunakan operator AND/OR.',
           },
           'PostgreSQL Auth Pagination': {
             ...p,
             description:
-              'Mengembangkan aplikasi Todo berbasis web dengan sistem autentikasi pengguna, manajemen data, dan pengelolaan profil. Dilengkapi dengan fitur pagination, filtering dan sorting (dengan kombinasi AND/OR), serta upload avatar untuk profil pengguna. Dibangun menggunakan Express, PostgreSQL, dan session-based authentication dengan struktur aplikasi yang terorganisir.',
+              'Mengembangkan aplikasi Todo berbasis web dengan sistem autentikasi pengguna, manajemen data, dan pengelolaan profil. Dilengkapi dengan fitur pagination, filtering dan sorting (dengan kombinasi AND/OR), serta upload avatar untuk profil pengguna.',
           },
           'MongoDB BREAD API': {
             ...p,
             description:
-              'Mengembangkan aplikasi web berbasis MongoDB untuk pengelolaan data pengguna dan todo, dilengkapi dengan fitur CRUD, pencarian, sorting, dan pagination. Menggunakan Node.js dan Express pada sisi backend serta JavaScript untuk membangun antarmuka yang interaktif.',
+              'Mengembangkan aplikasi web berbasis MongoDB untuk pengelolaan data pengguna dan todo, dilengkapi dengan fitur CRUD, pencarian, sorting, dan pagination.',
           },
           'Connect Link': {
             ...p,
             description:
-              'Mengembangkan aplikasi manajemen kontak berbasis web dengan fitur CRUD (Create, Read, Update, Delete) serta pencarian data berdasarkan nama, nomor telepon, dan email. Dibangun menggunakan HTML, CSS, dan JavaScript.',
+              'Mengembangkan aplikasi manajemen kontak berbasis web dengan fitur CRUD (Create, Read, Update, Delete) serta pencarian data berdasarkan nama, nomor telepon, dan email.',
           },
           'Learnify Study': {
             ...p,
             description:
-              'Mengembangkan aplikasi manajemen tugas Learnify Study untuk mendukung produktivitas, mirip dengan Trello dan Todoist, dengan fitur kelola tugas, agenda, dan pelacakan kebiasaan. Menggunakan Vite, Node.js, TypeScript, React, React Router, dan Vercel.',
+              'Mengembangkan aplikasi manajemen tugas Learnify Study untuk mendukung produktivitas, mirip dengan Trello dan Todoist, dengan fitur kelola tugas, agenda, dan pelacakan kebiasaan.',
           },
           'SportStat API': {
             ...p,
             description:
-              'Mengembangkan REST API untuk pengelolaan data olahraga dengan implementasi endpoint CRUD (Create, Read, Update, Delete) serta struktur API yang terorganisir. Dibangun menggunakan TypeScript dengan Node.js, PostgreSQL sebagai basis data, dan dideploy menggunakan Render.',
+              'Mengembangkan REST API untuk pengelolaan data olahraga dengan implementasi endpoint CRUD serta struktur API yang terorganisir.',
           },
           'Backend Internship': {
             ...p,

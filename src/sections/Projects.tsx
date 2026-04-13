@@ -17,16 +17,28 @@ export function Projects() {
       description={t.projects.description}
     >
       <div className="grid gap-4 sm:gap-5">
-        {portfolio.projects.map((p) => (
-          <FadeIn key={p.title}>
+        {portfolio.projects.map((p) => {
+          const githubUrl = p.links?.find((l) => l.label === 'GitHub')?.href
+          const CardContent = (
             <Card
               className={cn(
-                'p-5 sm:p-6',
+                'overflow-hidden',
                 'transition duration-200',
-                'hover:scale-[1.02] hover:border-[var(--border-strong)]',
+                'hover:scale-[1.01] hover:border-[var(--border-strong)]',
+                githubUrl && 'cursor-pointer',
               )}
             >
-              <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              {p.image && (
+                <div className="group/image relative aspect-[20/9] w-full overflow-hidden border-b border-[var(--border)] bg-neutral-900/40">
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    className="h-full w-full object-cover grayscale contrast-[1.05] transition-all duration-500 group-hover/image:grayscale-0"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+              <div className="p-5 sm:p-6">
                 <div className="min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <h3 className="text-base font-semibold tracking-[-0.02em] text-[var(--text)] sm:text-lg">
@@ -56,38 +68,37 @@ export function Projects() {
                   </div>
                 </div>
 
-                {p.links?.length ? (
-                  <div className="flex shrink-0 flex-wrap gap-2">
-                    {p.links.map((l) => (
-                      <a
-                        key={l.label}
-                        href={l.href}
-                        className={cn(
-                          'rounded-xl border border-[var(--border)] px-3 py-2 text-sm font-medium',
-                          'text-[var(--muted)] bg-[rgba(245,245,245,0.03)]',
-                          'transition-colors duration-200 hover:text-[var(--text)] hover:border-[var(--border-strong)]',
-                        )}
-                      >
-                        {l.label}
-                      </a>
+                {p.highlights?.length ? (
+                  <ul className="mt-5 space-y-2 text-sm text-[var(--muted)]">
+                    {p.highlights.map((h) => (
+                      <li key={h} className="flex gap-2">
+                        <span className="mt-[0.45em] h-1 w-1 shrink-0 rounded-full bg-[rgba(245,245,245,0.35)]" />
+                        <span className="leading-7">{h}</span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 ) : null}
               </div>
-
-              {p.highlights?.length ? (
-                <ul className="mt-5 space-y-2 text-sm text-[var(--muted)]">
-                  {p.highlights.map((h) => (
-                    <li key={h} className="flex gap-2">
-                      <span className="mt-[0.45em] h-1 w-1 shrink-0 rounded-full bg-[rgba(245,245,245,0.35)]" />
-                      <span className="leading-7">{h}</span>
-                    </li>
-                  ))}
-                </ul>
-              ) : null}
             </Card>
-          </FadeIn>
-        ))}
+          )
+
+          return (
+            <FadeIn key={p.title}>
+              {githubUrl ? (
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  {CardContent}
+                </a>
+              ) : (
+                CardContent
+              )}
+            </FadeIn>
+          )
+        })}
       </div>
     </Section>
   )

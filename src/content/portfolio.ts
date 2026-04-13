@@ -9,6 +9,7 @@ export type Project = {
     label: string
     href: string
   }[]
+  image?: string
 }
 
 // Content is localized in `src/i18n/translations.ts`.
